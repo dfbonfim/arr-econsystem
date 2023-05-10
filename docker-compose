@@ -3,6 +3,10 @@ services:
   bazarr:
     image: lscr.io/linuxserver/bazarr:arm32v7-latest
     container_name: bazarr
+    volumes:
+      - /home/pi/services/bazarr/config:/config
+      - /media/STORAGE/Midias/Filmes:/movies #optional
+      - /media/STORAGE/Midias/Series:/tv #optional    
     environment:
       - PUID=1000
       - PGID=1000
