@@ -7,10 +7,6 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-    volumes:
-      - /home/pi/services/bazarr/config:/config
-      - /media/STORAGE/Midias/Filmes:/movies #optional
-      - /media/STORAGE/Midias/Series:/tv #optional
     ports:
       - 6767:6767
     restart: unless-stopped
