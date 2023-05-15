@@ -5,6 +5,7 @@ services:
     container_name: bazarr
     volumes:
       - /home/pi/services/bazarr/config:/config
+      - /media/STORAGE:/media/STORAGE
     environment:
       - PUID=1000
       - PGID=1000
